@@ -9,7 +9,7 @@ TursoとFlutterを用いたサンプルです。
 TursoのDB作成までは割愛します。  
 下記のテーブルを作成しましょう。
 
-> テーブル名: memos
+> テーブル名: memos  
 > カラム
 > - id INTEGER PRIMARY KEY AUTOINCREMENT
 > - memo TEXT
