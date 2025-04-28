@@ -1,16 +1,38 @@
-# turso_example
+# Turso ✕ Flutter 
 
-A new Flutter project.
+TursoとFlutterを用いたサンプルです。
 
-## Getting Started
+## 使い方
 
-This project is a starting point for a Flutter application.
+### 1. TursoのDBにテーブルを作成
 
-A few resources to get you started if this is your first Flutter project:
+TursoのDB作成までは割愛します。
+下記のテーブルを作成しましょう。
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+> テーブル名: memos
+> カラム
+> - id INTEGER PRIMARY KEY AUTOINCREMENT
+> - memo TEXT
+> - created TEXT
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+テーブルを作成したDBに接続する、URLとTOKENを発行しましょう。
+手順はQuickStart参照してください。
+
+https://docs.turso.tech/sdk/flutter/quickstart
+
+
+### 2. プロジェクト準備
+
+このプロジェクトをクローンしましょう。
+
+```shell
+$ git clone ...
+```
+
+プロジェクトルートに `.env` ファイルを設置しましょう。中身は下記の通りです。
+値は、Tursoから取得したURLとTOKENを設定します。
+
+```:.env
+TURSO_URL=
+TURSO_AUTH_TOKEN=
+```
